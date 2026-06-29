@@ -2,41 +2,6 @@
 
 Este repositório contém o desenvolvimento de um pipeline completo de Machine Learning utilizando dados clínicos reais para resolver problemas de Classificação Binária, Classificação Multiclasse e Regressão. O projeto foi estruturado de forma modular e extensível, utilizando o ecossistema PyTorch para a construção das redes neurais (MLP) e o Optuna para a otimização automatizada de hiperparâmetros.
 
-## 📋 Estrutura do Projeto
-
-O projeto adota uma arquitetura limpa e modular, separando as responsabilidades de manipulação de dados, definição de modelos, treinamento e avaliação:
-
-trabalho_ml_coracao/
-│
-├── data/                    # Dados do projeto
-│   ├── raw/                 # Dataset original (Heart Disease Cleveland)
-│   └── processed/           # Dados após limpeza e padronização
-│
-├── notebooks/               # Jupyter Notebooks para análise exploratória
-│   └── 01_eda_e_limpeza.ipynb
-│
-├── src/                     # Código-fonte modular (Scripts Python)
-│   ├── __init__.py          
-│   ├── config.py            # Configurações globais e caminhos de diretórios
-│   ├── data_prep.py         # Pipeline de carregamento, limpeza e StandardScaler
-│   ├── dataset.py           # Classe nativa PyTorch (ClinicalDataset)
-│   ├── model.py             # Arquitetura dinâmica e parametrizável (FlexibleMLP)
-│   ├── train.py             # Motor do loop de treinamento (Forward/Backward)
-│   ├── metrics.py           # Cálculo de métricas e geração de gráficos de Loss
-│   ├── feature_selection.py # Etapa 3: Seleção via Random Forest e SHAP
-│   ├── run_tasks.py         # Execução unificada das 3 tarefas (Binária, Multi, Regressão)
-│   └── optimize.py          # Etapa 6: Otimização de hiperparâmetros via Optuna
-│
-├── models/                  # Pesos e artefatos dos modelos treinados (.pth)
-├── reports/                 # Relatórios e gráficos exportados
-│   └── figures/             # Curvas de aprendizado e gráficos do SHAP
-│
-├── main.py                  # Script mestre para execução e teste do pipeline
-├── requirements.txt         # Dependências do projeto
-└── README.md                # Documentação do repositório
-
----
-
 ## 🚀 Como Executar o Projeto
 
 ### 1. Pré-requisitos
