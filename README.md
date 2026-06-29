@@ -8,8 +8,6 @@ Este repositório contém o desenvolvimento de um pipeline completo de Machine L
 Certifique-se de ter o Python 3.10+ instalado em sua máquina.
 
 ### 2. Clonar o Repositório e Entrar no Diretório
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd trabalho_ml_coracao
 
 ### 3. Instalar as Dependências
 Instale todos os pacotes necessários de forma automatizada via requirements.txt:
